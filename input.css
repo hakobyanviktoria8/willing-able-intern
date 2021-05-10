@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: linear-gradient(156.08deg, #3E70A8 -41.22%, #141E30 112.86%);
+  box-shadow: 0 4px 20px rgba(33, 55, 84, 0.5);
+  height: 100vh;
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav .menu {
+  padding-right: 2rem;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+}
+.header nav .menu span {
+  position: absolute;
+  transform: rotate(90deg);
+  right: 30px;
+  top: 90px;
+}
+.header .header_bottom {
+  display: flex;
+}
+.header .header_bottom .header_bottom_left {
+  width: 50%;
+}
+.header .header_bottom .header_bottom_left img {
+  margin-top: 4rem;
+  width: 100%;
+}
+.header .header_bottom .header_bottom_right {
+  width: 50%;
+  padding: 9rem 4rem;
+}
+.header .header_bottom .header_bottom_right h1 {
+  font-size: 40px;
+  background: -webkit-linear-gradient(#0081FF, #60CBD0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Montserrat, serif;
+  font-weight: normal;
+}
+.header .header_bottom .header_bottom_right p {
+  font-size: 22px;
+  font-family: Open Sans, serif;
+  color: #fff;
+  margin: 2rem 0;
+}
+.header .header_bottom .header_bottom_right button {
+  font-size: 20px;
+  color: #fff;
+  background: #70D9FF;
+  border-radius: 5px;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+}
+
+.rightMenu {
+  height: 100vh;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background: #3E70A8;
+  background: url("images/rightMenuBg.png") no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  transition: 0.5s;
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=input.css.map */
