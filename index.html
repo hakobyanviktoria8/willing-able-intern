@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://use.fontawesome.com/5957e40b5e.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 <body>
 <div class="header">
     <nav>
+        <!--logo-->
         <a href="#">
             <img src="images/logo.png" alt="">
         </a>
-        <div id="rightMenu" class="rightMenu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus, at atque consequuntur deleniti dignissimos, dolor, eum exercitationem harum labore mollitia nemo nisi nobis non numquam officia praesentium quisquam vitae?</div>
-        <div class="menu" onclick="openNav()">
+
+        <!--rightMenu open-->
+        <div id="rightMenu" class="rightMenu">
+            <div class="closebtn" onclick="closeMenu()">
+                <img src="images/close.png" alt="">
+                <span>Close</span>
+            </div>
+            <div class="rightMenu_links">
+                <a href="">About Us</a>
+                <a href="">Liberary</a>
+                <a href="">Contact Us</a>
+                <hr>
+                <a href=""><img src="images/logo.png" alt=""></a>
+            </div>
+        </div>
+
+        <!--rightMenu close-->
+        <div class="menu" onclick="openMenu()">
             <img src="images/menu.png" alt="">
             <span>Menu</span>
         </div>
@@ -28,12 +51,144 @@
         </div>
     </div>
 </div>
-<div class="aplication"></div>
-<div class="expertise"></div>
-<div class="prodacts"></div>
-<div class="partners"></div>
-<div class="newsletter"></div>
-<div class="footer"></div>
+
+<!--aplication-->
+<div class="aplication">
+    <div class="aplication_left">
+        <div class="aplication_left_title">
+            <div>
+                <img src="images/data.png" alt="">
+            </div>
+            <h2>
+                New Aplication For All <span>Devices</span>
+            </h2>
+        </div>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of
+            the printing and typesetting industry.</p>
+        <hr>
+        <div class="aplication_left_review">
+            <img src="images/Group.png" alt="">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters</p>
+        </div>
+        <hr>
+    </div>
+    <div class="aplication_right">
+        <img src="images/Group2.png" alt="">
+    </div>
+</div>
+<div class="expertise">
+    <div class="expertise_right">
+        <h2>Our Expertise</h2>
+        <p>Our client base includes manufacturers and importers from within and outside the European Union.</p>
+        <hr>
+        <span>Any desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+            search for 'lorem ipsum' will uncover many web sites still in their infancy.
+        </span>
+        <div>
+            <button>Read More</button>
+        </div>
+    </div>
+</div>
+<div class="prodacts">
+    <div class="prodacts_title">
+        <h2>Our Prodacts</h2>
+        <div class="line_dark"></div>
+    </div>
+    <div class="prodacts_slider_wraper">
+        <section class="slider">
+            <div>
+                <div class="slider_content">
+                    <img src="images/a4.png" alt="">
+                    <h3>Toys</h3>
+                    <p>CE certification in accordance with the Toys Safety Directive 2009/48/EC.</p>
+                    <a href="">More</a>
+                </div>
+            </div>
+            <div>
+                <div class="slider_content">
+                    <img src="images/a3.png" alt="">
+                    <h3>Electronic Equipment</h3>
+                    <p>CE certification in accordance with the EMC Directive 2014/30/EU.</p>
+                    <a href="">More</a>
+                </div>
+            </div>
+            <div>
+                <div class="slider_content">
+                    <img src="images/a2.png" alt="">
+                    <h3>Medical Devices</h3>
+                    <p>CE certification in accordance with the Medical Devices Directive 93/42/EEC.</p>
+                    <a href="">More</a>
+                </div>
+            </div>
+            <div>
+                <div class="slider_content">
+                    <img src="images/a1.png" alt="">
+                    <h3>Machinery</h3>
+                    <p>CE certification in accordance with the Machinery Directive 2006/42/EC.</p>
+                    <a href="">More</a>
+                </div>
+            </div>
+            <div>
+                <div class="slider_content">
+                    <img src="images/a2.png" alt="">
+                    <h3>Machinery</h3>
+                    <p>CE certification in accordance with the Machinery Directive 2006/42/EC.</p>
+                    <a href="">More</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</div>
+<div class="partners">
+    <div class="partners_title">
+        <h2>Our Partners</h2>
+        <div class="line_dark"></div>
+    </div>
+    <div class="partners_wraper">
+        <div><img src="images/b1.png" alt=""></div>
+        <div><img src="images/b2.png" alt=""></div>
+        <div><img src="images/b3.png" alt=""></div>
+        <div><img src="images/b4.png" alt=""></div>
+    </div>
+</div>
+<div class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="line_white"></div>
+
+    <form action="">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="E-mail">
+        <input type="tel" placeholder="Phone Number">
+        <button>REQUEST</button>
+    </form>
+</div>
+<div class="footer">
+    <div class="footer_top">
+        <p>It is a long established fact that a reader will be distracted by the readable content English.</p>
+    </div>
+    <div class="footer_bottom">
+        <div>
+            <a href=""><img src="images/footer_logo.png" alt=""></a>
+        </div>
+        <div>
+            <a href="/about">About Us</a>
+            <a href="/liberary">Liberary</a>
+            <a href="/contact">Contact Us</a>
+        </div>
+        <div>
+            <span>© 2019. Privacy Policy</span>
+        </div>
+    </div>
+</div>
+<button onclick="topFunction()" id="topBtn"><i class="far fa-angle-up"></i></button>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
