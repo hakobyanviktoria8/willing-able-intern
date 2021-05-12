@@ -1,5 +1,5 @@
 function openMenu() {
-    document.getElementById("rightMenu").style.width = "400px";
+    document.getElementById("rightMenu").style.width = "320px";
     console.log("here")
 }
 
@@ -35,26 +35,27 @@ $(document).ready(function () {
         nextArrow : '<a href="" class="right_arrow"><i class="fas fa-chevron-right"></i></a>',
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1025,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+                    dots: false
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 460,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: false,
                 }
             }
         ]

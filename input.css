@@ -4,32 +4,56 @@
   box-sizing: border-box;
 }
 
-.line_dark {
+.line_white, .line_dark {
   width: 5rem;
   height: 2px;
+}
+
+.header nav .rightMenu, .header {
+  height: 100vh;
+}
+
+.header nav {
+  display: flex;
+}
+
+.expertise .expertise_right h2, .aplication .aplication_left .aplication_left_title h2 {
+  font-size: 38px;
+  font-family: Work Sans, serif;
+  color: #4F4F4F;
+}
+
+.partners .partners_title h2, .prodacts .prodacts_title h2 {
+  font-size: 42px;
+  color: #4F4F4F;
+}
+
+.line_dark_long {
+  margin: 2rem auto;
+  background: #808285;
+  width: 100%;
+  height: 1.5px;
+}
+
+.line_dark {
   margin: 2rem auto;
   background: #808285;
 }
 
 .line_white {
-  width: 5rem;
-  height: 2px;
   margin: 2rem 0;
-  background: white;
+  background: #fff;
 }
 
 .header {
   background: linear-gradient(156.08deg, #3E70A8 -41.22%, #141E30 112.86%);
   box-shadow: 0 4px 20px rgba(33, 55, 84, 0.5);
-  height: 100vh;
 }
 .header nav {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header nav .rightMenu {
-  height: 100vh;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -150,18 +174,15 @@
 }
 .aplication .aplication_left .aplication_left_title div {
   padding: 1rem;
-  box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px #4F4F4F;
   border-radius: 50%;
 }
 .aplication .aplication_left .aplication_left_title div img {
   width: 50px;
 }
 .aplication .aplication_left .aplication_left_title h2 {
-  font-size: 38px;
-  font-family: Work Sans, serif;
   margin-left: 1rem;
   width: 50%;
-  color: #4F4F4F;
 }
 .aplication .aplication_left .aplication_left_title h2 span {
   font-weight: normal;
@@ -196,20 +217,19 @@
   background-image: url("images/expertiseBg.png");
   background-size: cover;
   width: 100%;
-  min-height: 23rem;
+  min-height: 25rem;
   color: #fff;
 }
 .expertise .expertise_right {
   background: rgba(28, 117, 188, 0.64);
-  min-height: 23rem;
+  min-height: 25rem;
   width: 50%;
   float: right;
   padding: 2rem 3rem 1rem;
 }
 .expertise .expertise_right h2 {
-  font-size: 38px;
-  font-family: Work Sans, serif;
   margin-bottom: 1.5rem;
+  color: #fff;
 }
 .expertise .expertise_right p {
   font-weight: 600;
@@ -225,7 +245,7 @@
 .expertise .expertise_right button {
   background: transparent;
   border: 1px solid white;
-  color: white;
+  color: #fff;
   padding: 0.3rem 2rem;
   margin-top: 1.5rem;
   font-size: 20px;
@@ -239,10 +259,6 @@
 .prodacts .prodacts_title {
   text-align: center;
 }
-.prodacts .prodacts_title h2 {
-  font-size: 42px;
-  color: #4F4F4F;
-}
 .prodacts .prodacts_slider_wraper .slider {
   width: 90%;
   margin: 0 auto;
@@ -255,7 +271,7 @@
   position: absolute;
   right: -30px;
   top: 12rem;
-  color: gray;
+  color: #4F4F4F;
   font-size: 30px;
 }
 .prodacts .prodacts_slider_wraper .slider .left_arrow {
@@ -298,10 +314,6 @@
 .partners .partners_title {
   text-align: center;
 }
-.partners .partners_title h2 {
-  font-size: 42px;
-  color: #4F4F4F;
-}
 .partners .partners_wraper {
   width: 95%;
   margin: 0 auto;
@@ -338,20 +350,20 @@
 .newsletter form input {
   border: none;
   outline: none;
-  padding: 0.5rem;
+  padding: 0.8rem;
   margin-right: 0.5rem;
   width: 24%;
   border-radius: 5px;
 }
 .newsletter form button {
-  color: #FFFFFF;
+  color: #fff;
   font-size: 20px;
   background: #55A928;
   border: none;
   outline: none;
   padding: 0.25rem 3rem;
   border-radius: 5px;
-  margin-left: 4rem;
+  margin-left: 8rem;
 }
 
 .footer .footer_top {
@@ -379,7 +391,7 @@
 }
 .footer .footer_bottom span {
   margin-right: 5rem;
-  font-size: 22px;
+  font-size: #fff;
   color: #4F4F4F;
 }
 
@@ -398,6 +410,270 @@
   color: #1C75BC;
   cursor: pointer;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1440px) {
+  .header .header_bottom .header_bottom_left img {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 100vh;
+  }
+  .header nav .rightMenu {
+    top: 0;
+    height: 100vh;
+  }
+  .header .header_bottom .header_bottom_right {
+    padding: 5rem 4rem;
+  }
+  .header .header_bottom .header_bottom_left img {
+    margin-top: 3rem;
+  }
+
+  .aplication .aplication_left p {
+    margin: 2rem 0;
+  }
+  .aplication .aplication_left .aplication_left_title h2 {
+    width: 85%;
+  }
+  .aplication .aplication_left .aplication_left_review {
+    margin: 2rem 0;
+  }
+  .aplication .aplication_left .aplication_left_review img {
+    width: 70px;
+    height: 65px;
+  }
+  .aplication .aplication_left .aplication_left_review p {
+    margin: 0;
+    margin-left: 2rem;
+  }
+  .aplication .aplication_right img {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .expertise .expertise_right {
+    width: 60%;
+  }
+
+  .newsletter form button {
+    margin-left: 0;
+  }
+
+  .footer .footer_bottom span {
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 90vh;
+  }
+  .header nav .rightMenu {
+    height: 90vh;
+  }
+  .header .header_bottom .header_bottom_left img {
+    margin-top: 2rem;
+  }
+  .header .header_bottom .header_bottom_right {
+    padding: 2rem;
+  }
+
+  .aplication {
+    padding: 0 5rem;
+    flex-direction: column;
+  }
+  .aplication .aplication_left {
+    width: 100%;
+  }
+  .aplication .aplication_right {
+    width: 90%;
+  }
+
+  .expertise .expertise_right {
+    width: 100%;
+  }
+
+  .partners .partners_wraper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .partners .partners_wraper div {
+    width: 47%;
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter form {
+    display: contents;
+  }
+  .newsletter form input, .newsletter form button {
+    width: 50%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+  }
+
+  .footer .footer_bottom {
+    justify-content: normal;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer .footer_bottom div:nth-of-type(1) {
+    width: 60%;
+  }
+  .footer .footer_bottom div:nth-of-type(2) {
+    width: 30%;
+  }
+  .footer .footer_bottom div:nth-of-type(3) {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E1DBDB;
+  }
+}
+@media (max-width: 426px) {
+  .header {
+    height: 100vh;
+    width: 100%;
+  }
+  .header a img {
+    width: 90%;
+  }
+  .header nav {
+    padding-top: 1rem;
+  }
+  .header nav .menu span {
+    top: 110px;
+  }
+  .header nav .rightMenu {
+    height: 100vh;
+  }
+  .header .header_bottom {
+    flex-direction: column;
+  }
+  .header .header_bottom .header_bottom_left {
+    display: none;
+  }
+  .header .header_bottom .header_bottom_right {
+    width: 100%;
+    padding: 0 2rem;
+    margin: 4rem auto;
+    text-align: center;
+  }
+
+  .aplication {
+    padding: 0 2rem;
+  }
+  .aplication .aplication_left {
+    margin-top: 3rem;
+  }
+
+  .expertise {
+    min-height: 31rem;
+  }
+
+  .prodacts {
+    padding: 0 2rem;
+  }
+  .prodacts .prodacts_slider_wraper .slider .left_arrow {
+    left: 0;
+    display: none !important;
+  }
+  .prodacts .prodacts_slider_wraper .slider .right_arrow {
+    right: 0;
+    display: none !important;
+  }
+
+  .partners {
+    padding: 2rem;
+  }
+  .partners .partners_wraper div {
+    width: 45%;
+    margin: 1rem auto 0;
+  }
+
+  .newsletter {
+    padding: 2rem;
+  }
+  .newsletter form input, .newsletter form button {
+    width: 100%;
+  }
+
+  .footer .footer_bottom {
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .footer .footer_bottom div {
+    width: 100% !important;
+    text-align: center;
+  }
+  .footer .footer_bottom div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #topBtn {
+    display: none !important;
+  }
+}
+@media (max-width: 376px) {
+  .header nav .rightMenu .closebtn {
+    padding: 1rem 3rem;
+  }
+  .header nav .rightMenu .closebtn span {
+    left: 60px;
+    top: 100px;
+  }
+
+  .aplication .aplication_left .aplication_left_title {
+    display: block;
+  }
+  .aplication .aplication_left .aplication_left_title h2 {
+    font-size: 35px;
+  }
+  .aplication .aplication_left .aplication_left_title div {
+    width: 100px;
+    margin: 0 auto 1rem;
+  }
+
+  .expertise .expertise_right h2 {
+    font-size: 35px;
+  }
+
+  .line_white {
+    margin: 1.3rem 0;
+  }
+}
+@media (max-width: 320px) {
+  .header nav .menu span {
+    top: 95px;
+  }
+  .header .header_bottom .header_bottom_right h1 {
+    font-size: 35px;
+  }
+  .header .header_bottom .header_bottom_right p {
+    font-size: 20px;
+  }
+
+  .aplication .aplication_left .aplication_left_title h2 {
+    font-size: 32px;
+  }
+  .aplication .aplication_left .aplication_left_review img {
+    display: none;
+  }
+  .aplication .aplication_left .aplication_left_review p {
+    margin: 0;
+  }
+
+  .expertise .expertise_right span, .expertise .expertise_right p {
+    font-size: 19px;
+  }
 }
 
 /*# sourceMappingURL=input.css.map */
